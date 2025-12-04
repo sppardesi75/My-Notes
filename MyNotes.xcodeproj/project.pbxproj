@@ -14,6 +14,12 @@
 		CB7A5B092D9A01EA0001E980 /* MyNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7A5B082D9A01EA0001E980 /* MyNotesTests.swift */; };
 		CB7A5B132D9A01EA0001E980 /* MyNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7A5B122D9A01EA0001E980 /* MyNotesUITests.swift */; };
 		CB7A5B152D9A01EA0001E980 /* MyNotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7A5B142D9A01EA0001E980 /* MyNotesUITestsLaunchTests.swift */; };
+		CB7A5B272D9A03A50001E980 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7A5B262D9A03A40001E980 /* Note.swift */; };
+		CB7A5B292D9A03C90001E980 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7A5B282D9A03C90001E980 /* UserPreferences.swift */; };
+		CB7A5B2B2D9A03DD0001E980 /* FileSystemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7A5B2A2D9A03DD0001E980 /* FileSystemManager.swift */; };
+		CB7A5B2D2D9A03F30001E980 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7A5B2C2D9A03F30001E980 /* SettingsView.swift */; };
+		CB7A5B2F2D9A04090001E980 /* FileNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7A5B2E2D9A04090001E980 /* FileNotesView.swift */; };
+		CB7A5B312D9A04170001E980 /* SwiftDataNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7A5B302D9A04170001E980 /* SwiftDataNotesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,13 @@
 		CB7A5B0E2D9A01EA0001E980 /* MyNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7A5B122D9A01EA0001E980 /* MyNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesUITests.swift; sourceTree = "<group>"; };
 		CB7A5B142D9A01EA0001E980 /* MyNotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB7A5B252D9A03270001E980 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CB7A5B262D9A03A40001E980 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		CB7A5B282D9A03C90001E980 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		CB7A5B2A2D9A03DD0001E980 /* FileSystemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemManager.swift; sourceTree = "<group>"; };
+		CB7A5B2C2D9A03F30001E980 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CB7A5B2E2D9A04090001E980 /* FileNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileNotesView.swift; sourceTree = "<group>"; };
+		CB7A5B302D9A04170001E980 /* SwiftDataNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataNotesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +107,14 @@
 		CB7A5AF62D9A01E50001E980 /* MyNotes */ = {
 			isa = PBXGroup;
 			children = (
+				CB7A5B242D9A02CA0001E980 /* Views */,
+				CB7A5B222D9A02A80001E980 /* Persistence */,
+				CB7A5B212D9A029D0001E980 /* Models */,
 				CB7A5AF72D9A01E50001E980 /* MyNotesApp.swift */,
 				CB7A5AF92D9A01E50001E980 /* ContentView.swift */,
 				CB7A5AFB2D9A01E90001E980 /* Assets.xcassets */,
 				CB7A5AFD2D9A01E90001E980 /* Preview Content */,
+				CB7A5B252D9A03270001E980 /* README.md */,
 			);
 			path = MyNotes;
 			sourceTree = "<group>";
@@ -125,6 +142,33 @@
 				CB7A5B142D9A01EA0001E980 /* MyNotesUITestsLaunchTests.swift */,
 			);
 			path = MyNotesUITests;
+			sourceTree = "<group>";
+		};
+		CB7A5B212D9A029D0001E980 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB7A5B262D9A03A40001E980 /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB7A5B222D9A02A80001E980 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				CB7A5B282D9A03C90001E980 /* UserPreferences.swift */,
+				CB7A5B2A2D9A03DD0001E980 /* FileSystemManager.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		CB7A5B242D9A02CA0001E980 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB7A5B2C2D9A03F30001E980 /* SettingsView.swift */,
+				CB7A5B2E2D9A04090001E980 /* FileNotesView.swift */,
+				CB7A5B302D9A04170001E980 /* SwiftDataNotesView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB7A5B2B2D9A03DD0001E980 /* FileSystemManager.swift in Sources */,
 				CB7A5AFA2D9A01E50001E980 /* ContentView.swift in Sources */,
+				CB7A5B292D9A03C90001E980 /* UserPreferences.swift in Sources */,
+				CB7A5B2F2D9A04090001E980 /* FileNotesView.swift in Sources */,
+				CB7A5B2D2D9A03F30001E980 /* SettingsView.swift in Sources */,
 				CB7A5AF82D9A01E50001E980 /* MyNotesApp.swift in Sources */,
+				CB7A5B312D9A04170001E980 /* SwiftDataNotesView.swift in Sources */,
+				CB7A5B272D9A03A50001E980 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +474,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +503,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

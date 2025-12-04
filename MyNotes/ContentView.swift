@@ -1,21 +1,27 @@
-//
-//  ContentView.swift
-//  MyNotes
-//
-//  Created by Sanskar Pardesi on 2025-03-30.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("isDarkMode") var isDarkMode: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
+                }
+            
+            FileNotesView()
+                .tabItem {
+                    Label("File Notes", systemImage: "doc.text")
+                }
+            
+            SwiftDataNotesView()
+                .tabItem {
+                    Label("SwiftData Notes", systemImage: "note.text")
+                }
         }
-        .padding()
+        // This ensures the whole app follows the user’s dark/light mode setting.
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 
